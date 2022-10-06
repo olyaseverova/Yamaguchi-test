@@ -1,0 +1,46 @@
+$white: #ffffff;
+$black: #000000;
+$near-black: #181818;
+$blue: #0B64FE;
+$turquoise: #A6FFFF;
+
+%flex-space {
+	display: flex;
+	justify-content: space-between;
+}
+
+%flex-wrap-space {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Ubuntu-Light";
+	src: url(../fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+	font-family: "Bebas-Neue";
+	src: url(../fonts/Bebas-Neue.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat-ExtraBold";
+	src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+
+
+$tablet-width: 1000px;
+$desktop-width: 1500px;

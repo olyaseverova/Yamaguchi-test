@@ -1,30 +1,25 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <div class="links">
+      <router-link class="link" to="/" @click="toWhite">Ergonomics</router-link> |
+      <router-link class="link" to="/voice" @click="toBlack">Voice Control</router-link>
+    </div>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  methods: {
+    toBlack: function () {
+      let app = document.getElementById('app');
+      app.classList.add("back-black")
+    },
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    toWhite: function () {
+      let app = document.getElementById('app');
+      app.classList.remove("back-black")
     }
   }
 }
-</style>
+</script>
